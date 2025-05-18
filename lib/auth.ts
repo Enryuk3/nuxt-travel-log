@@ -5,9 +5,12 @@ import db from "./db/index";
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
-    provider: "sqlite", // or "mysql", "sqlite"
+    provider: "sqlite",
   }),
   advanced: {
-    generateId: false,
+    database: {
+      generateId: false, // Usar los IDs generados por la base de datos
+    },
   },
+
 });
