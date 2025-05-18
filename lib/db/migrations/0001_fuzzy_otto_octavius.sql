@@ -1,0 +1,1 @@
+ALTER TABLE `locationLogImage` RENAME COLUMN "name" TO "key";
