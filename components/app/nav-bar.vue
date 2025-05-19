@@ -7,7 +7,7 @@
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <a class="btn btn-accent">Sign In</a>
+      <AuthButton />
     </div>
   </div>
 </template>
